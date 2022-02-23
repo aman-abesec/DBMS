@@ -1,0 +1,19 @@
+UPDATE table_name
+  SET col1=val1,col2=val2,...........
+  WHERE condition;
+
+UPDATE emp
+  SET com=300
+  WHERE sal<3000;
+
+UPDATE emp
+  SET sal=5000,com=300
+  WHERE job="ANALYST";
+
+UPDATE emp
+  SET sal=5000;
+
+#===================UPDATING one table t0 another table=============
+UPDATE emp
+  set job=(SELECT dname FROM dept
+  WHERE rownum=1)

@@ -1,0 +1,22 @@
+Alter used with combination of (ADD and DROP);
+Used for changes at column level like constraint changing, renaming one
+column changing data type size;
+
+ALTER TABLE table_name ADD(column_name datatype);
+
+ALTER TABLE emp ADD(Address VARCHAR(15));
+ALTER TABLE emp ADD(DOB DATE,FATHERNAME VARCHAR(20),MOTHERNAME VARCHAR(20),Allowness NUMBER(4));
+
+ALTER PRIMARY KEY(empno);
+
+ALTER TABLE emp ADD(Gender CHAR(1) DEFAULT 'F');
+
+DROP is used to delete one or more existing column.
+-DROP constraint
+-DROP a single column
+-DROP multiple column
+
+ALTER TABLE DROP(Gender);
+ALTER TABLE emp DROP(DOB,FATHERNAME,MOTHERNAME,Allowness);
+
+ALTER TABLE emp DROP constraint Primary_id

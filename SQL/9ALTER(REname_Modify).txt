@@ -1,0 +1,17 @@
+MODIFY is used to change the existing column or the size of
+the data ttype of the existing column.
+
+ALTER TABLE Table_name MODIFY(column_name datatype);
+
+ALTER TABLE emp MODIFY(Address VARCHAR(75));
+
+ALTER TABLE emp MODIFY(Address VARCHAR(75),DOM INT);
+
+-You can increase or Decrease the length by any value
+But you can decreaase the value at largest length of value.
+
+ALTER TABLE table_name RENAME
+  old_column_name TO new_column_name;
+
+ALTER TABLE emp RENAME COLUMN
+  Address TO Location1;

@@ -1,0 +1,41 @@
+SQL : There are four type of sub-language
+1-DDL(Data Defination language)
+    Example: Create, Drop, Alter
+
+2-DQL(Data query language)
+    Example: Select
+
+3-DDML(Data Maniplution language)
+    Example: Update, Insert, Delete
+
+4-DCL(Data Control language)
+    Example: Grant, Revoke
+
+#===================CREATE===================================
+CREATE TABLE student(
+    student_id VARCHAR(20) PRIMARY KEY,
+    student_name VARCHAR(20) NOT NULL,
+    student_age INT
+    );
+
+CREATE TABLE student(
+    Roll_No INT PRIMARY KEY,
+    F_name VARCHAR(20) NOT NULL,
+    L_name VARCHAR(20) NOT NULL,
+    Age INT
+    );
+
+#=====================ALTER & DROP===================================
+ALTER TABLE ADD aaddress VARCHAR(500);
+ALTER TABLE DROP aaddress;
+
+#========================SELECT======================================
+SELECT * FROM student;
+SELECT f_name,l_name FROM student;
+SELECT DISTINCT(f_name) FROM student;
+SELECT * FROM student WHERE student_id>2;
+
+#======================INSERT==================================
+INSERT INTO student VALUES("1a","Aman Singh",20);
+INSERT INTO student VALUES("2a","Akash Singh",19);
+INSERT INTO student(student_id,student_name) VALUES("3a","Tripti Singh");

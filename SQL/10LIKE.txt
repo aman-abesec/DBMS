@@ -1,0 +1,25 @@
+Like operrator is used to search specified pattern in the data
+and retrive the record when the pattern is matched;
+'a%' match string starting with 'a';
+'%a' match string ending with 'a';
+'a%z' match string starting with 'a' and ending with 'z';
+'%ab%' match string which contain sub string 'ab';
+'_ab' match string which contain 'ab' at second position from starting.
+'ab_' match string which contain 'ab' at second position from ending.
+'a__'
+
+SELECT * FROM emp
+  WHERE LIKE 'B%';
+
+'%M%' Ex:-MAN,AMAN;
+
+#=====Name of length Five===============
+SELECT name FROM emp
+  WHERE name LIKE '_____';
+
+#=====Name starting with A end with N===============
+SELECT name FROM emp
+  WHERE name LIKE 'A%M';
+
+SELECT name FROM emp
+  WHERE name NOT LIKE 'A%M';

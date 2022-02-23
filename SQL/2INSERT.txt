@@ -1,0 +1,14 @@
+#=========================Method-1==========================================
+#===================Inserting at run time===================================
+INSERT INTO student VALUES(&student_id,&f_name,&l_name);
+
+#==========================Method-2===========================================
+#====================Inserting at one By one=================================
+enter value for student_id=1
+enter value for f_name :Aman
+enter value for l_name :Singh
+
+#==========================Method-3=========================================
+#==========================Inserting one table to another table=============
+INSERT INTO table2 SELECT * FROM table1;
+INSERT INTO table2(name) SELECT name FROM table1;

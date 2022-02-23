@@ -1,0 +1,19 @@
+BETWEEN condition allows you to  easily test the condition in (inclusive)
+range within the expression;
+
+It can be used with SELECT,INSRT,UPDATE or DELETE statement.
+
+SELECT * FROM emp
+  WHERE sal BETWEEN 2000 AND 3000;
+
+SELECT * FROM emp
+  WHERE sal>=2000 AND sal<=3000;
+
+SELECT * FROM emp
+WHERE hiredate BETWEEN TO_DATE('1981/04/02','yyyy/mm/dd')
+AND TO_DATE('1981/06/09','yyyy/mm/dd')
+
+SELECT * FROM emp
+  WHERE sal NOT BETWEEN 2000 AND 3000;
+
+INSERT INTO sample (SELECT * FROM emp WHERE sal BETWEEN 2000 AND 3000);

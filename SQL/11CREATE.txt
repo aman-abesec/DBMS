@@ -1,0 +1,26 @@
+CREATE command is used to create Table;
+
+CREATE TABLE table_name(
+col1 datatype1(size),
+col2 datatype2(size),
+col3 datatype3(size),
+.
+.
+coln datatypen(size),
+PRIMARY KEY(one or more Column)
+);
+
+DESC is used to know the structure of the table.
+DESC table_name;
+
+CREATE TABLE emp as (SELECT * FROM emp1);
+CREATE TABLE emp (SELECT name,class,age FROM emp1);
+CREATE TABLE emp (SELECT * FROM emp1 where deptno=10);
+
+CREATE TABLE emp as (SELECT ename,job,sal FROM emp1,dept);
+
+
+#++++++++++++++++IMPORTANT+++++++++++++++++++++++++
+#NO data will be copy only structure will be copy
+CREATE TABLE emp
+as (SELECT * FROM emp1 where 1=2);

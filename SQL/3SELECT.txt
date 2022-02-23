@@ -1,0 +1,7 @@
+SELECT * FROM student;
+SELECT F-name,l_name FROM student;
+SELECT * FROM student
+      9 WHERE dept_no=20;
+
+SELECT ename,sal*12 AS Annual_sal FROM emp;
+SELECT ename,empno,dname,loc FROM emp,dept;

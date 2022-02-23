@@ -1,0 +1,13 @@
+Used to add multiple rows with single insert statement.
+
+INSERT ALL
+INTO mytable(col1,col2,.............coln) VALUES(expr1,expr2,..................exprn)
+INTO mytable(col1,col2,.............coln) VALUES(expr1,expr2,..................exprn)
+INTO mytable(col1,col2,.............coln) VALUES(expr1,expr2,..................exprn)
+SELECT * FROM dual;
+
+INSERT ALL
+INTO mytable1(col1,col2,.............coln) VALUES(expr1,expr2,..................exprn)
+INTO mytable1(col1,col2,.............coln) VALUES(expr1,expr2,..................exprn)
+INTO mytable2(col1,col2,.............coln) VALUES(expr1,expr2,..................exprn)
+SELECT * FROM dual;
