@@ -1,4 +1,4 @@
-Like operrator is used to search specified pattern in the data
+Like operator is used to search specified pattern in the data
 and retrive the record when the pattern is matched;
 'a%' match string starting with 'a';
 '%a' match string ending with 'a';
