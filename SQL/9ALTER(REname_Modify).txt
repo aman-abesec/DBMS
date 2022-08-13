@@ -1,5 +1,5 @@
 MODIFY is used to change the existing column or the size of
-the data ttype of the existing column.
+the data type of the existing column.
 
 ALTER TABLE Table_name MODIFY(column_name datatype);
 
